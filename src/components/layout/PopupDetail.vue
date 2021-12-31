@@ -261,7 +261,7 @@
 import axios from "axios";
 
 export default {
-  name: "AssetDetail",
+  name: "PopupDetail",
   props: {
     bus: {},
     customerId: {

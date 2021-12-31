@@ -28,6 +28,7 @@
     border: 1px solid #afafaf;
     width: 59px;
     height: 25px;
+    padding: 0;
     overflow: hidden;
 }
 
