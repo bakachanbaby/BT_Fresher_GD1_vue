@@ -9,11 +9,9 @@
     top: 63%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 10;
 }
 
 .m-dialog-modal {
-    z-index: 10;
     position: fixed;
     display: none;
     top: 0;
