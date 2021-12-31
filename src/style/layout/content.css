@@ -48,6 +48,15 @@
     padding: 16px;
 }
 
+.m-content-search-left {
+    display: flex;
+    align-items: center;
+}
+
+.m-combobox-search {
+    margin-right: 16px;
+}
+
 .m-input.m-input-search {
     background: url('../../assets/img/Screenshot_2021-11-27_164411-removebg-preview.png');
     background-repeat: no-repeat;
@@ -60,7 +69,7 @@
     background-color: #ffffff;
     border-radius: 2.5px;
     border: 1px solid #afafaf;
-    height: 35px;
+    height: 34px;
     font-size: 13px;
     font-style: italic;
     overflow: hidden;
@@ -72,6 +81,9 @@
     align-items: center;
 }
 
+
+/* Content table */
+
 .m-content-table-box {
     height: calc(100vh - 260px);
     overflow: scroll;
@@ -81,6 +93,9 @@
     display: flex;
     justify-content: space-evenly;
 }
+
+
+/* contetn btn */
 
 .m-content-btn-change {
     background: url(/img/qlts-icon.e652bcc2.svg) no-repeat -156px -68px;
