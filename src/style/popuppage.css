@@ -6,7 +6,7 @@
     max-width: 900px;
     height: 100vh;
     font-size: 13px;
-    top: 50%;
+    top: 63%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -33,7 +33,7 @@ strong {
     justify-content: space-between;
     align-items: center;
     background-color: #FFFFFF;
-    padding: 16px;
+    padding: 16px 24px;
     border-radius: 4px 4px 0 0;
 }
 
@@ -49,7 +49,7 @@ strong {
 .m-dialog-header .m-dialog-title {
     font-size: 17px;
     margin-right: 16px;
-    font-family: BAKA font Bold;
+    font-weight: 700;
     text-transform: uppercase;
 }
 
@@ -105,41 +105,28 @@ strong {
     background-color: #FFFFFF;
 }
 
-.m-dialog-content-line {
+.m-content-line {
     display: flex;
     padding: 6px 0;
     justify-content: space-between;
     align-items: center;
 }
 
-.m-dialog-content-line-side {
-    display: flex;
-    align-items: center;
-    width: 400px;
-}
-
 .m-dialog-content-box {
-    position: relative;
     margin-right: 16px;
 }
 
+.m-dialog-content-box input {
+    font-size: 15px;
+    font-style: italic;
+}
+
 .m-dialog-content-box-tittle {
-    font-family: BAKA font Bold;
-    margin-bottom: 6px;
+    padding: 6px 6px 6px 0;
 }
 
-.m-dialog-content-box-radio {
+.m-content-line-right {
     display: flex;
-    height: 30px;
-    line-height: 30px;
-}
-
-.m-full-side {
-    width: 360px !important;
-}
-
-.m-full-line {
-    width: 813px;
 }
 
 
@@ -148,7 +135,7 @@ strong {
 .m-dialog-footer {
     display: flex;
     justify-content: space-between;
-    background-color: #FFFFFF;
+    background-color: #F5F5F5;
     padding: 10px;
     border-radius: 0 0 4px 4px;
 }
@@ -166,7 +153,8 @@ strong {
     background-color: white;
     font-family: BAKA font Bold;
     color: black;
-    border: 1px solid black;
+    border: none;
+    box-shadow: rgb(0 0 0 / 16%) 0px 1px 4px;
     min-width: 20px !important;
     transition: 0.3s;
 }

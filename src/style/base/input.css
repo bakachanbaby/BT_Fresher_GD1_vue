@@ -1,8 +1,9 @@
 input.m-input {
     position: relative;
-    border: 1px solid #bbbbbb;
-    border-radius: 4px;
-    height: 30px;
+    background-color: #ffffff;
+    border-radius: 2.5px;
+    border: 1px solid #afafaf;
+    height: 36px;
     padding: 0 16px;
     color: black;
     outline: none;
@@ -14,7 +15,7 @@ input.m-input {
 }
 
 .m-input:focus {
-    border-color: #2BA01D;
+    border-color: #4A9FE3;
 }
 
 
@@ -29,7 +30,7 @@ input.m-input {
 }
 
 .m-input.m-input-search:focus {
-    border-color: #2BA01D;
+    border-color: #4A9FE3;
 }
 
 .m-input.m-input-search::placeholder {
@@ -90,4 +91,11 @@ input.m-input.m-input-select {
     padding: 6px;
     color: white;
     background-color: rgb(73, 73, 73);
+}
+
+
+/* Style cho input bị khóa */
+
+input[type="text"]:disabled {
+    background-color: #F5F5F5;
 }

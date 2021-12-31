@@ -47,20 +47,21 @@ a {
 
 @font-face {
     font-family: BAKA font;
-    src: url('../assets/fonts/notosans-regular.2cb88a13.woff2');
+    src: url('../assets/html/dist/05a65153efe56028d343c10b53faa583.ttf');
 }
 
 @font-face {
     font-family: BAKA font Bold;
-    src: url('../assets/fonts/notosans-bold.3ede5aff.woff2');
+    font-weight: 700;
+    src: url('../assets/html/dist/05a65153efe56028d343c10b53faa583.ttf');
 }
 
 @font-face {
     font-family: BAKA font Italic;
-    src: url('../assets/fonts/notosans-italic.1c1aaac9.woff2');
+    src: url('../assets/html/dist/05a65153efe56028d343c10b53faa583.ttf');
 }
 
 @font-face {
     font-family: BAKA font semibold;
-    src: url('../assets/fonts/notosans-semibold.df3e6dc4.woff2');
+    src: url('../assets/html/dist/05a65153efe56028d343c10b53faa583.ttf');
 }

@@ -8,20 +8,11 @@
             <!-- DIALOG HEADER Left -->
 
             <div class="m-dialog-header-left">
-              <div class="m-dialog-title">Thông tin nhân viên</div>
-              <div class="m-dialog-checklist">
-                <div class="m-dialog-checklist-content">
-                  <input type="checkbox" /> Là khách hàng <br />
-                </div>
-                <div class="m-dialog-checklist-content">
-                  <input type="checkbox" /> Là nhà cung cấp <br />
-                </div>
-              </div>
+              <div class="m-dialog-title">Sửa tài sản</div>
             </div>
             <!-- DIALOG HEADER right -->
 
             <div class="m-dialog-header-right">
-              <div id="m-dialog-help" class="m-dialog-help"></div>
               <div
                 id="m-dialog-close"
                 class="m-dialog-close"
@@ -31,20 +22,20 @@
           </div>
           <!-- DIALOG CONTENT -->
           <div class="m-dialog-content">
-            <div class="m-dialog-content-line">
-              <div class="m-dialog-content-line-side">
+            <div class="m-content-line">
+              <div class="m-content-line-left">
                 <div class="m-dialog-content-box">
                   <div class="m-dialog-content-box-tittle">
-                    Mã <strong>*</strong>
+                    Mã tài sản <strong>*</strong>
                   </div>
                   <input
-                    style="width: 135px"
                     type="text"
                     name=""
                     id="m-employeeCode-txt"
-                    class="m-input"
+                    class="m-input m-width-26"
                     fieldName="EmployeeCode"
                     v-model="customer.CustomerCode"
+                    placeholder="Nhập mã tài sản"
                   />
                   <div
                     class="m-input-alert-error"
@@ -53,233 +44,198 @@
                     Mã không được để trống
                   </div>
                 </div>
+              </div>
+              <div class="m-content-line-right m-width-70">
                 <div class="m-dialog-content-box">
                   <div class="m-dialog-content-box-tittle">
-                    Tên <strong>*</strong>
+                    Tên tài sản <strong>*</strong>
                   </div>
                   <input
                     type="text"
                     name=""
                     id="m-employeeFullName-txt"
-                    class="m-input"
+                    class="m-input m-width-66"
                     fieldName="EmployeeName"
                     v-model="customer.FullName"
+                    placeholder="Nhập tên tài sản"
                   />
                   <div class="m-input-alert-error" style="display: none">
                     Tên không được để trống
                   </div>
                 </div>
               </div>
-              <div class="m-dialog-content-line-side">
+            </div>
+            <div class="m-content-line">
+              <div class="m-content-line-left">
                 <div class="m-dialog-content-box">
-                  <div class="m-dialog-content-box-tittle">Ngày sinh</div>
+                  <div class="m-dialog-content-box-tittle">
+                    Mã bộ phận sử dụng <strong>*</strong>
+                  </div>
+                  <select
+                    class="m-combobox m-content-combobox m-width-30"
+                    name=""
+                  >
+                    <option value="">HT</option>
+                    <option value="">HTN</option>
+                    <option value="">KHO</option>
+                    <option value="">PBT</option>
+                  </select>
+                </div>
+              </div>
+              <div class="m-content-line-right m-width-70">
+                <div class="m-dialog-content-box">
+                  <div class="m-dialog-content-box-tittle">
+                    Tên bộ phận sử dụng
+                  </div>
+                  <input
+                    type="text"
+                    name=""
+                    class="m-input m-width-66"
+                    disabled
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="m-content-line">
+              <div class="m-content-line-left">
+                <div class="m-dialog-content-box">
+                  <div class="m-dialog-content-box-tittle">
+                    Mã loại tài sản <strong>*</strong>
+                  </div>
+                  <select
+                    class="m-combobox m-content-combobox m-width-30"
+                    name=""
+                  >
+                    <option value="">HT</option>
+                    <option value="">HTN</option>
+                    <option value="">KHO</option>
+                    <option value="">PBT</option>
+                  </select>
+                </div>
+              </div>
+              <div class="m-content-line-right m-width-70">
+                <div class="m-dialog-content-box">
+                  <div class="m-dialog-content-box-tittle">
+                    Tên loại tài sản
+                  </div>
+                  <input
+                    type="text"
+                    name=""
+                    class="m-input m-width-66"
+                    disabled
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="m-content-line">
+              <div class="m-content-line-left">
+                <div class="m-dialog-content-box">
+                  <div class="m-dialog-content-box-tittle">
+                    Số lượng <strong>*</strong>
+                  </div>
+                  <input
+                    type="number"
+                    name=""
+                    class="m-input m-width-26"
+                  />
+
+                </div>
+              </div>
+              <div class="m-content-line-right m-width-70">
+                <div class="m-dialog-content-box ">
+                  <div class="m-dialog-content-box-tittle">
+                    Nguyên giá <strong>*</strong>
+                  </div>
+                  <input
+                    type="text"
+                    name=""
+                    class="m-input m-width-30"
+                  />
+                </div>
+                <div class="m-dialog-content-box ">
+                  <div class="m-dialog-content-box-tittle">
+                    Tỷ lệ hao mòn (%) <strong>*</strong>
+                  </div>
+                  <input
+                    type="text"
+                    name=""
+                    class="m-input m-width-30"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="m-content-line">
+              <div class="m-content-line-left">
+                <div class="m-dialog-content-box">
+                  <div class="m-dialog-content-box-tittle">
+                    Ngày mua <strong>*</strong>
+                  </div>
                   <input
                     type="date"
                     name=""
-                    id="m-employeeDateOfBirth-txt"
-                    class="m-input"
-                    fieldName="DateOfBirth"
-                    :value="
-                      customer.DateOfBirth
-                        | formatYYYYMMDD(customer.DateOfBirth)
-                    "
+                    class="m-input m-width-26"
                   />
-                </div>
-                <div class="m-dialog-content-box">
-                  <div class="m-dialog-content-box-tittle">Giới tính</div>
-                  <div
-                    id="m-employeeGender-txt"
-                    class="m-dialog-content-box-radio"
-                    fieldName="Gender"
-                  >
-                    <input
-                      type="radio"
-                      radio
-                      class="gender"
-                      name="gender"
-                      value="1"
-                    />Nam
-                    <input
-                      type="radio"
-                      radio
-                      class="gender"
-                      name="gender"
-                      value="0"
-                    />Nữ
-                    <input
-                      type="radio"
-                      radio
-                      class="gender"
-                      name="gender"
-                      value="2"
-                    />Khác
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="m-dialog-content-line">
-              <div class="m-dialog-content-line-side">
-                <div class="m-dialog-content-box">
-                  <div class="m-dialog-content-box-tittle">
-                    Đơn vị <strong>*</strong>
-                  </div>
 
-                  <!-- <combobox id="m-employeeDepartmentId-txt" api="http://amis.manhnv.net/api/v1/Departments" proppertyDisplay="DepartmentName" propertyValue="DepartmentId" fieldName="DepartmentId">
-                                    </combobox> -->
-                  <div
-                    class="m-input-alert-error"
-                    style="display: none; top: 70%; left: 25%"
-                  >
-                    Đơn vị không được để trống
-                  </div>
                 </div>
               </div>
-              <div
-                class="m-dialog-content-line-side"
-                style="margin-bottom: 10px"
-              >
-                <div class="m-dialog-content-box">
-                  <div class="m-dialog-content-box-tittle">Số CMND</div>
+              <div class="m-content-line-right m-width-70">
+                <div class="m-dialog-content-box ">
+                  <div class="m-dialog-content-box-tittle">
+                    Ngày bắt đầu sử dụng <strong>*</strong>
+                  </div>
                   <input
-                    type="number"
-                    name=""
-                    id=""
-                    class="m-input"
-                    fieldName="IdentityNumber"
-                  />
-                </div>
-                <div class="m-dialog-content-box">
-                  <div class="m-dialog-content-box-tittle">Ngày cấp</div>
-                  <input
-                    style="width: 134px"
                     type="date"
                     name=""
-                    id=""
-                    class="m-input"
-                    fieldName="IdentityDate"
+                    class="m-input m-width-30"
                   />
                 </div>
-              </div>
-            </div>
-            <div class="m-dialog-content-line">
-              <div class="m-dialog-content-line-side">
-                <div class="m-dialog-content-box">
-                  <div class="m-dialog-content-box-tittle">Chức danh</div>
+                <div class="m-dialog-content-box ">
+                  <div class="m-dialog-content-box-tittle">
+                    Năm theo dõi <strong>*</strong>
+                  </div>
                   <input
                     type="text"
                     name=""
-                    id="m-employeePositionId-txt"
-                    class="m-input m-full-side"
-                    fieldName="EmployeePosition"
-                  />
-                  <!-- <combobox id="m-employeePositionId-txt" api="http://amis.manhnv.net/api/v1/Positions" proppertyDisplay="PositionName" propertyValue="PositionId" fieldName="PositionId">
-                                    </combobox> -->
-                </div>
-              </div>
-              <div class="m-dialog-content-line-side">
-                <div class="m-dialog-content-box">
-                  <div class="m-dialog-content-box-tittle">Nơi cấp</div>
-                  <input
-                    type="text"
-                    name=""
-                    id=""
-                    class="m-input m-full-side"
-                    fieldName="IdentityPlace"
+                    class="m-input m-width-30"
+                    placeholder="2021"
+                    disabled
                   />
                 </div>
               </div>
             </div>
-            <div class="m-dialog-content-line">
-              <div class="m-dialog-content-line-side">
-                <div class="m-dialog-content-box">
-                  <div class="m-dialog-content-box-tittle">Địa chỉ</div>
-                  <input
-                    type="text"
-                    name=""
-                    id="m-employeeAddress-txt"
-                    class="m-input m-full-line"
-                    fieldName="Address"
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div class="m-dialog-content-line">
-              <div class="m-dialog-content-line-side">
-                <div class="m-dialog-content-box">
-                  <div class="m-dialog-content-box-tittle">ĐT di động</div>
-                  <input
-                    type="number"
-                    name=""
-                    id="m-employeePhone-txt"
-                    class="m-input"
-                    fieldName="PhoneNumber"
-                    v-model="customer.PhoneNumber"
-                  />
-                </div>
-                <div class="m-dialog-content-box">
-                  <div class="m-dialog-content-box-tittle">ĐT cố định</div>
-                  <input
-                    type="tel"
-                    name=""
-                    id=""
-                    class="m-input"
-                    fieldName="TelephoneNumber"
-                  />
-                </div>
-                <div class="m-dialog-content-box">
-                  <div class="m-dialog-content-box-tittle">Email</div>
-                  <input
-                    type="email"
-                    name=""
-                    id="m-employeeEmail-txt"
-                    class="m-input"
-                    fieldName="Email"
-                    v-model="customer.Email"
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div class="m-dialog-content-line">
-              <div class="m-dialog-content-line-side">
+            <div class="m-content-line">
+              <div class="m-content-line-left">
                 <div class="m-dialog-content-box">
                   <div class="m-dialog-content-box-tittle">
-                    Tài khoản ngân hàng
+                    Số năm sử dụng <strong>*</strong>
                   </div>
                   <input
                     type="number"
                     name=""
-                    id=""
-                    class="m-input"
-                    fieldName="BankAccountNumber"
+                    class="m-input m-width-26"
                   />
+
                 </div>
-                <div class="m-dialog-content-box">
-                  <div class="m-dialog-content-box-tittle">Tên ngân hàng</div>
+              </div>
+              <div class="m-content-line-right m-width-70">
+                <div class="m-dialog-content-box ">
+                  <div class="m-dialog-content-box-tittle">
+                    Giá trị hao mòn năm <strong>*</strong>
+                  </div>
                   <input
                     type="text"
                     name=""
-                    id=""
-                    class="m-input"
-                    fieldName="BankName"
-                  />
-                </div>
-                <div class="m-dialog-content-box">
-                  <div class="m-dialog-content-box-tittle">Chi nhánh</div>
-                  <input
-                    type="text"
-                    name=""
-                    id=""
-                    class="m-input"
-                    fieldName="BankBranchName"
+                    class="m-input m-width-30"
                   />
                 </div>
               </div>
             </div>
           </div>
+
+          <!-- DIALOG FOOTER -->
           <div class="m-dialog-footer">
-            <div class="m-dialog-footer-left">
+            <div class="m-dialog-footer-left"></div>
+            <div class="m-dialog-footer-right">
               <button
                 id="m-d-f-close"
                 class="m-btn m-btn-nobg m-btn-footer"
@@ -287,15 +243,12 @@
               >
                 Hủy
               </button>
-            </div>
-            <div class="m-dialog-footer-right">
-              <button id="m-d-f-save" class="m-btn m-btn-footer">Cất</button>
               <button
                 id="m-d-f-save-add"
                 class="m-btn m-btn-footer"
                 @click="btnSaveOnClick"
               >
-                Cất và thêm
+                Lưu
               </button>
             </div>
           </div>
@@ -310,9 +263,7 @@ import axios from "axios";
 export default {
   name: "CustomerDetail",
   props: {
-    bus:{
-
-    },
+    bus: {},
     customerId: {
       default: null,
       type: String,
@@ -327,7 +278,7 @@ export default {
     },
   },
   mounted() {
-    this.bus.$on('getNewCustomerCode', this.getNewCustomerCode);
+    this.bus.$on("getNewCustomerCode", this.getNewCustomerCode);
   },
   methods: {
     btnCancelOnClick: function () {
@@ -382,7 +333,7 @@ export default {
     getNewCustomerCode() {
       this.customer = {};
       var me = this;
-      axios 
+      axios
         .get(`http://cukcuk.manhnv.net/api/v1/Customerss/NewCustomerCode`)
         .then(function (res) {
           me.customer = {};

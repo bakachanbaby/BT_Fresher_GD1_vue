@@ -33,6 +33,22 @@
     text-align: right;
 }
 
+.m-width-26 {
+    width: 26vh;
+}
+
+.m-width-30 {
+    width: 30vh;
+}
+
+.m-width-66 {
+    width: 66vh;
+}
+
+.m-width-70 {
+    width: 70vh;
+}
+
 
 /* Loading page */
 

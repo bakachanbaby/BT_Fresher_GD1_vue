@@ -27,8 +27,8 @@
 }
 
 .m-text {
-    font-size: 30px;
-    font-family: BAKA font Bold;
+    font-size: 28px;
+    font-weight: 700;
     cursor: pointer;
 }
 
@@ -45,15 +45,8 @@
 /* width */
 
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 3px;
     height: 1px;
-}
-
-
-/* Track */
-
-::-webkit-scrollbar-track {
-    background: #393A3D;
 }
 
 
@@ -87,8 +80,6 @@
 .m-menu-item:hover {
     background-color: rgba(93, 93, 97, 0.493);
 }
-
-.m-menu-item:active {}
 
 .m-menu-item-l {
     display: flex;
@@ -155,6 +146,7 @@
 
 .router-link-active {
     background-color: #1aa4c8;
+    font-weight: 700;
     font-family: BAKA font Bold;
 }
 

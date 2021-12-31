@@ -3,15 +3,20 @@
     width: 100%;
     /* width: calc(100% - 178px); */
     height: calc(100vh - 70px);
-    background-color: #bdbdbd;
+    background-color: #F3F6FE;
 }
 
 
 /* main table */
 
+.m-content-box {
+    border: 1px solid #afafaf;
+    border-radius: 3.5px;
+}
+
 .m-content-table {
     margin: 16px;
-    background-color: white;
+    background-color: #F3F6FE;
 }
 
 
@@ -39,14 +44,26 @@
 .m-content-search {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     padding: 16px;
 }
 
+.m-input.m-input-search {
+    background: url('../../assets/img/Screenshot_2021-11-27_164411-removebg-preview.png');
+    background-repeat: no-repeat;
+    background-position: 6px center;
+    background-size: 32px 32px;
+    padding-left: 40px;
+}
+
 .m-row.m-l-search input {
-    min-width: 250px;
-    height: 40px;
-    margin-right: 16px;
+    background-color: #ffffff;
+    border-radius: 2.5px;
+    border: 1px solid #afafaf;
+    height: 35px;
+    font-size: 13px;
+    font-style: italic;
+    overflow: hidden;
 }
 
 .m-content-search-right {
@@ -60,17 +77,49 @@
     overflow: scroll;
 }
 
-
-/* Btn refresh */
-
-#btnRefresh {
-    background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -1024px -29px;
-    width: 22px;
-    height: 24px;
+.m-content-table-row-setting {
+    display: flex;
+    justify-content: space-evenly;
 }
 
-#btnRefresh:hover {
-    background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -493px -31px;
-    width: 22px;
-    height: 24px;
+.m-content-btn-change {
+    background: url(/img/qlts-icon.e652bcc2.svg) no-repeat -156px -68px;
+    width: 16px;
+    height: 16px;
+}
+
+.m-content-btn-copy {
+    background: url(/img/qlts-icon.e652bcc2.svg) no-repeat -244px -112px;
+    width: 16px;
+    height: 16px;
+}
+
+#m-btn-add-ele {
+    margin-right: 16px;
+}
+
+
+/* Btn excel, delete */
+
+#btnExcel,
+#btnDelete {
+    background-color: #ffffff;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width: 36px;
+    height: 36px;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.m-btn-excel {
+    background: url(/img/qlts-icon.e652bcc2.svg) no-repeat -278px -102px;
+    width: 36px;
+    height: 36px;
+}
+
+.m-btn-delete {
+    background: url(/img/qlts-icon.e652bcc2.svg) no-repeat -454px -102px;
+    width: 36px;
+    height: 36px;
 }

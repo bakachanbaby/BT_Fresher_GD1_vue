@@ -64,13 +64,9 @@
     margin-right: 16px;
 }
 
-.m-header-r-bell:hover {
-    background: url('../../assets/icon/qlts-icon.svg') no-repeat -332px -109px;
-}
-
 .m-header-r-menu {
-    background: url('../../assets/icon/qlts-icon.svg') no-repeat -377px -110px;
-    width: 14px;
+    background: url('../../assets/icon/qlts-icon.svg') no-repeat -199px -23px;
+    width: 18px;
     height: 18px;
     margin-right: 16px;
 }
