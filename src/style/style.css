@@ -47,21 +47,16 @@ a {
 
 @font-face {
     font-family: BAKA font;
-    src: url('../assets/html/dist/05a65153efe56028d343c10b53faa583.ttf');
+    src: url('../assets/fonts/GoogleSans-Regular.otf');
 }
 
 @font-face {
     font-family: BAKA font Bold;
     font-weight: 700;
-    src: url('../assets/html/dist/05a65153efe56028d343c10b53faa583.ttf');
+    src: url('../assets/fonts/GoogleSans-Bold.otf');
 }
 
 @font-face {
     font-family: BAKA font Italic;
-    src: url('../assets/html/dist/05a65153efe56028d343c10b53faa583.ttf');
-}
-
-@font-face {
-    font-family: BAKA font semibold;
-    src: url('../assets/html/dist/05a65153efe56028d343c10b53faa583.ttf');
+    src: url('../assets/fonts/GoogleSans-Italic.otf');
 }

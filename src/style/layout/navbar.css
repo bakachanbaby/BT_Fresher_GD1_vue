@@ -22,12 +22,12 @@
     background: url('../../assets/icon/qlts-icon.svg') no-repeat -20px -680px;
     width: 36px;
     height: 36px;
-    margin-right: 16px;
+    margin: 0px 6px;
     cursor: pointer;
 }
 
 .m-text {
-    font-size: 28px;
+    font-size: 25px;
     font-weight: 700;
     cursor: pointer;
 }
@@ -70,8 +70,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 16px 0 10px;
-    height: 54px;
+    margin: 0 11px;
+    height: 44px;
     color: white;
     cursor: pointer;
     border-radius: 6px;
@@ -88,6 +88,14 @@
 
 .m-menu-item-icon {
     margin: 16px;
+}
+
+.m-menu-item-text {
+    font-size: 14px;
+}
+
+.m-menu-item-r {
+    margin-right: 16px;
 }
 
 
@@ -145,9 +153,13 @@
 /* Nhấn vào 1 item bất kỳ */
 
 .router-link-active {
+    transition: 0.3s;
     background-color: #1aa4c8;
-    font-weight: 700;
-    font-family: BAKA font Bold;
+}
+
+.router-link-active:hover {
+    transition: 0.3s;
+    background-color: #28B7DC;
 }
 
 .router-link-active .i-overview {
@@ -190,4 +202,37 @@
     background: url('../../assets/icon/qlts-icon.svg') no-repeat -330px -198px;
     width: 20px;
     height: 20px;
+}
+
+
+/* close navbar */
+
+.m-menu-dash {
+    position: absolute;
+    width: 20vh;
+    top: 94vh;
+    left: 0;
+    /* border: 1px solid; */
+    border-bottom: 1px solid #afafaf;
+}
+
+.m-menu-btn-show {
+    position: absolute;
+    top: 95vh;
+    left: 20vh;
+    border: 1px solid #afafaf;
+    border-radius: 3.5px;
+    background: url('../../assets/icon/qlts-icon.svg') no-repeat -22px -284px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.btn-show {
+    left: 2.5vh;
+    background: url('../../assets/icon/qlts-icon.svg') no-repeat -64px -284px;
+}
+
+.m-menu-btn-show:hover {
+    background-color: #afafaf;
 }

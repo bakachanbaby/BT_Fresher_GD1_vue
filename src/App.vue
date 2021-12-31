@@ -29,7 +29,7 @@ export default {
   display: flex;
 }
 #test {
-  width: calc(100% - 250px);
+  width: 100%;
 }
 @import url("style/style.css");
 </style>
