@@ -57,26 +57,26 @@
                     STT
                   </th>
 
-                  <th class="text-align-left" style="width: 125px">
+                  <th class="text-align-left" style="width: 150px">
                     Mã tài sản
                   </th>
-                  <th class="text-align-left" style="width: 150px">
+                  <th class="text-align-left" style="width: 200px">
                     Tên tài sản
                   </th>
-                  <th class="text-align-left" style="width: 125px">
+                  <th class="text-align-left" style="width: 150px">
                     Loại tài sản
                   </th>
                   <th class="text-align-left">Bộ phận sử dụng</th>
                   <th class="text-align-right" style="width: 100px">
                     Số lượng
                   </th>
-                  <th class="text-align-center" style="width: 100px">
+                  <th class="text-align-right" style="width: 125px">
                     Nguyên giá
                   </th>
-                  <th class="text-align-center" style="width: 150px">
+                  <th class="text-align-right" style="width: 150px">
                     HM/KH lũy kế
                   </th>
-                  <th class="text-align-center" style="width: 150px">
+                  <th class="text-align-right" style="width: 150px">
                     Giá trị còn lại
                   </th>
 
@@ -93,24 +93,16 @@
                 >
                   <td class="text-align-center"><input type="checkbox" /></td>
                   <td class="text-align-left">{{ i + 1 }}</td>
-                  <td class="text-align-left">{{ c.CustomerCode }}</td>
-                  <td class="text-align-left">{{ c.FullName }}</td>
-                  <td class="text-align-left">{{ c.Email }}</td>
-                  <td class="text-align-left">{{ c.FullName }}</td>
+                  <td class="text-align-left"> 37H7WN72/2022 </td>
+                  <td class="text-align-left">Máy tính xách tay Fujitsu</td>
+                  <td class="text-align-left">Máy tính xách tay</td>
+                  <td class="text-align-left">Phòng Hành chính Kế toán</td>
                   <td class="text-align-right">{{ i + 1 }}</td>
-                  <!-- <td class="text-align-center">
-                  {{ formatDataComputed }}
-                </td> -->
-                  <!-- methods -->
                   <td class="text-align-right">
-                    {{ formatDate(c.DateOfBirth) }}
+                    20.000.000
                   </td>
-                  <!-- filters -->
-                  <!-- <td class="text-align-center">
-                  {{ c.DateOfBirth | formatDate(c.DateOfBirth) }}
-                </td> -->
-                  <td class="text-align-right">{{ c.PhoneNumber }}</td>
-                  <td class="text-align-right">{{ c.Address }}</td>
+                  <td class="text-align-right">1.521.000</td>
+                  <td class="text-align-right">49.087.000</td>
                   <td class="text-align-right">
                     <div class="m-content-table-row-setting">
                       <div class="m-content-btn-change"></div>
@@ -142,7 +134,13 @@
             </div>
             <div class="m-paging-hover m-paging-next"></div>
           </div>
-          <div class="m-paging-right"></div>
+          <div class="m-paging-right">
+            <div class="m-paging-right-quantily text-align-right m-paging-0-8" style="width: 100px">15</div>
+            <div class="m-paging-right-price text-align-right m-paging-0-8" style="width: 125px">249.000.000</div>
+            <div class="m-paging-right-accumulated text-align-right m-paging-0-8" style="width: 150px">19.716.000</div>
+            <div class="m-paging-right-value text-align-right m-paging-0-8" style="width: 150px">229.284.000</div>
+            <div style="width: 100px"></div>
+          </div>
         </div>
       </div>
 
