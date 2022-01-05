@@ -1,8 +1,11 @@
 <template>
   <div id="app">
-    <TheNarbar/>
-    <div id="test">
+    <!-- Phần navbar -->
+    <TheNavbar/>
+    <div id="body">
+      <!-- Phần header -->
       <TheHeader/>
+      <!-- Phần content -->
       <TheContent/>
     </div>
 
@@ -10,14 +13,14 @@
 </template>
 <script>
 //B1: Import component
-import TheNarbar from "./components/layout/TheNavbar.vue";
+import TheNavbar from "./components/layout/TheNavbar.vue";
 import TheHeader from "./components/layout/TheHeader.vue";
 import TheContent from "./components/layout/TheContent.vue";
 
 export default {
   name: "App",
   components: {
-    TheNarbar,
+    TheNavbar,
     TheHeader,
     TheContent,
   },
@@ -28,7 +31,7 @@ export default {
 #app {
   display: flex;
 }
-#test {
+#body {
   width: 100%;
 }
 @import url("style/style.css");

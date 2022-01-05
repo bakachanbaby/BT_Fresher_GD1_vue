@@ -8,7 +8,7 @@ table.m-table {
 }
 
 table.m-table tr {
-    height: 40px;
+    height: 39px;
     cursor: pointer;
     background-color: #F5F5F5;
     table-layout: fixed;
@@ -21,6 +21,7 @@ table.m-table tr td {
 
 table.m-table thead {
     width: 100%;
+    height: 38px;
     position: sticky;
     left: 0;
     right: 0;
@@ -30,14 +31,11 @@ table.m-table thead {
 
 table.m-table tbody {
     margin-top: 38px;
-    height: 528px;
     max-height: calc(100vh - 303px);
-    overflow-y: scroll;
-    overflow-x: hidden;
+    overflow: scroll;
 }
 
 table.m-table tbody tr {
-    max-height: 50px;
     background-color: white;
 }
 

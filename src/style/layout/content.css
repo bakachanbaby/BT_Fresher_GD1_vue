@@ -2,7 +2,7 @@
     float: left;
     width: 100%;
     /* width: calc(100% - 178px); */
-    height: calc(100vh - 70px);
+    height: calc(100vh - 44px);
     background-color: #F3F6FE;
 }
 
@@ -45,7 +45,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 16px;
+    padding: 0 0 16px 0;
 }
 
 .m-content-search-left {
@@ -85,13 +85,13 @@
 /* Content table */
 
 .m-content-table-box {
-    height: calc(100vh - 260px);
+    height: calc(100vh - 210px);
     overflow: scroll;
 }
 
 .m-content-table-row-setting {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 
@@ -101,6 +101,7 @@
     background: url(/img/qlts-icon.e652bcc2.svg) no-repeat -156px -68px;
     width: 16px;
     height: 16px;
+    margin: 11px;
 }
 
 .m-content-btn-copy {

@@ -8,11 +8,13 @@
             <!-- DIALOG HEADER Left -->
 
             <div class="m-dialog-header-left">
-              <div class="m-dialog-title">Sửa tài sản</div>
+              <!-- Title popup -->
+              <div class="m-dialog-title">Thêm tài sản</div>
             </div>
             <!-- DIALOG HEADER right -->
 
             <div class="m-dialog-header-right">
+              <!-- Icon đóng popup -->
               <div
                 id="m-dialog-close"
                 class="m-dialog-close"
@@ -22,12 +24,16 @@
           </div>
           <!-- DIALOG CONTENT -->
           <div class="m-dialog-content">
+            <!-- Từng dòng của popup -->
             <div class="m-content-line">
+              <!-- Bên trái của popup -->
               <div class="m-content-line-left">
                 <div class="m-dialog-content-box">
+                  <!-- Tittle content box -->
                   <div class="m-dialog-content-box-tittle">
                     Mã tài sản <strong>*</strong>
                   </div>
+                  <!-- Input content box -->
                   <input
                     type="text"
                     name=""
@@ -45,6 +51,7 @@
                   </div>
                 </div>
               </div>
+              <!-- Bên phải của popup -->
               <div class="m-content-line-right m-width-70">
                 <div class="m-dialog-content-box">
                   <div class="m-dialog-content-box-tittle">
@@ -136,6 +143,7 @@
                   <input
                     type="number"
                     name=""
+                    dir="rtl"
                     class="m-input m-width-26"
                   />
 
@@ -148,6 +156,7 @@
                   </div>
                   <input
                     type="text"
+                    dir="rtl"
                     name=""
                     class="m-input m-width-30"
                   />
@@ -158,6 +167,7 @@
                   </div>
                   <input
                     type="text"
+                    dir="rtl"
                     name=""
                     class="m-input m-width-30"
                   />
@@ -196,6 +206,7 @@
                   <input
                     type="text"
                     name=""
+                    dir="rtl"
                     class="m-input m-width-30"
                     placeholder="2021"
                     disabled
@@ -211,6 +222,7 @@
                   </div>
                   <input
                     type="number"
+                    dir="rtl"
                     name=""
                     class="m-input m-width-26"
                   />
@@ -224,6 +236,7 @@
                   </div>
                   <input
                     type="text"
+                    dir="rtl"
                     name=""
                     class="m-input m-width-30"
                   />
@@ -234,8 +247,11 @@
 
           <!-- DIALOG FOOTER -->
           <div class="m-dialog-footer">
+            <!-- Dialog footer left -->
             <div class="m-dialog-footer-left"></div>
+            <!-- Dialog footer right -->
             <div class="m-dialog-footer-right">
+              <!-- Btn thoát popup -->
               <button
                 id="m-d-f-close"
                 class="m-btn m-btn-nobg m-btn-footer"
@@ -243,6 +259,7 @@
               >
                 Hủy
               </button>
+              <!-- Btn lưu thông tin popup -->
               <button
                 id="m-d-f-save-add"
                 class="m-btn m-btn-footer"
@@ -256,12 +273,16 @@
       </div>
     </div>
   </div>
+  
 </template>
 <script>
 import axios from "axios";
-
+import BaseToastBox from '../../components/base/BaseToastBox.vue'
 export default {
   name: "AssetDetail",
+  component:{
+    BaseToastBox
+  },
   props: {
     bus: {},
     customerId: {
@@ -329,6 +350,7 @@ export default {
             this.$emit("ShowDialog", false);
           });
       }
+
     },
     getNewCustomerCode() {
       this.customer = {};

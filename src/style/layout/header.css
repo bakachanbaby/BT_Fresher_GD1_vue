@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     float: left;
-    height: 70px;
+    height: 44px;
     width: 100%;
     background-color: #ffffff;
     /* width: calc(100% - 250px); */
@@ -29,7 +29,6 @@
 /* Header right */
 
 .m-header-r-text {
-    font-weight: 700;
     color: #001031;
     margin-right: 16px;
 }
@@ -43,7 +42,7 @@
     background-color: rgba(26, 164, 200, .2);
     border-radius: 3px;
     width: 112px;
-    height: 30px;
+    height: 20px;
     overflow: hidden;
 }
 

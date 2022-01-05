@@ -7,12 +7,14 @@
     </div>
     <!-- Narbar content -->
     <div class="m-navbar-box">
+      <!-- Item tổng quan -->
       <router-link class="m-menu-item" to="/overview">
         <div class="m-menu-item-l">
           <div class="m-menu-item-icon i-overview"></div>
           <div class="m-menu-item-text" v-if="show">Tổng quan</div>
         </div>
       </router-link>
+      <!-- Item tài sản -->
       <router-link class="m-menu-item" to="/asset">
         <div class="m-menu-item-l">
           <div class="m-menu-item-icon i-asset"></div>
@@ -22,6 +24,7 @@
           <div class="m-menu-item-downicon"></div>
         </div>
       </router-link>
+      <!-- Item tài sản HT-ĐB -->
       <router-link class="m-menu-item" to="/asset-htdb">
         <div class="m-menu-item-l">
           <div class="m-menu-item-icon i-asset-htdb"></div>
@@ -31,6 +34,7 @@
           <div class="m-menu-item-downicon"></div>
         </div>
       </router-link>
+      <!-- Item công cụ dụng cụ -->
       <router-link class="m-menu-item" to="/tools">
         <div class="m-menu-item-l">
           <div class="m-menu-item-icon i-tools"></div>
@@ -40,12 +44,14 @@
           <div class="m-menu-item-downicon"></div>
         </div>
       </router-link>
+      <!-- Item danh mục -->
       <router-link class="m-menu-item" to="/category">
         <div class="m-menu-item-l">
           <div class="m-menu-item-icon i-category"></div>
           <div class="m-menu-item-text" v-if="show">Danh mục</div>
         </div>
       </router-link>
+      <!-- Item tra cứu -->
       <router-link class="m-menu-item" to="/search">
         <div class="m-menu-item-l">
           <div class="m-menu-item-icon i-search"></div>
@@ -55,6 +61,7 @@
           <div class="m-menu-item-downicon"></div>
         </div>
       </router-link>
+      <!-- Item báo cáo -->
       <router-link class="m-menu-item" to="/report">
         <div class="m-menu-item-l">
           <div class="m-menu-item-icon i-report"></div>

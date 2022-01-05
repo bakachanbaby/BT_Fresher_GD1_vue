@@ -5,7 +5,7 @@
     border-radius: 4px;
     max-width: 900px;
     height: 100vh;
-    font-size: 13px;
+    font-size: 16px;
     top: 63%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -52,7 +52,6 @@ strong {
     font-size: 17px;
     margin-right: 16px;
     font-weight: 700;
-    text-transform: uppercase;
 }
 
 .m-dialog-checklist {
@@ -119,7 +118,7 @@ strong {
 }
 
 .m-dialog-content-box input {
-    font-size: 15px;
+    font-size: 16px;
     font-style: italic;
 }
 
@@ -153,7 +152,6 @@ strong {
 #m-d-f-close,
 #m-d-f-save {
     background-color: white;
-    font-family: BAKA font Bold;
     color: black;
     border: none;
     box-shadow: rgb(0 0 0 / 16%) 0px 1px 4px;
